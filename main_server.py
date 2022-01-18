@@ -1,6 +1,9 @@
 from block import Block
 from blockchain import Blockchain
 from miner import Miner
+import logging
+
+logging.basicConfig(level=logging.DEBUG)
 
 
 def main():

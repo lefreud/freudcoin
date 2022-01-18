@@ -1,9 +1,6 @@
 from blockchain import Blockchain
 from block import Block
-from typing import *
-from transaction import Transaction
-from dataclasses import dataclass
-from dataclasses_json import dataclass_json
+
 
 # NODE_CLASSES = {
 #     "miner": Miner
@@ -20,13 +17,6 @@ POSSIBLE_PORTS = [
     9000, 9001, 9002
 ]
 
-
-@dataclass_json
-@dataclass
-class Message:
-    type: str
-    block: Optional[Block]
-    unconfirmed_transaction: Optional[Transaction]
 
 
 def broadcast_block(block: Block):

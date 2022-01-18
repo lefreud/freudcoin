@@ -15,7 +15,7 @@ class Blockchain:
     """
 
     blocks: list = field(init=False)
-    difficulty: int = 2
+    difficulty: int = 4
 
     def __post_init__(self):
         self.blocks = []
@@ -29,7 +29,7 @@ class Blockchain:
     @property
     def last_block(self) -> Block:
         if len(self.blocks) > 0:
-            return self.blocks[0]
+            return self.blocks[-1]
         raise BlockchainException("Genesis block not found!")
 
     def append(self, block: Block):
