@@ -1,0 +1,4 @@
+
+
+class BlockchainException(Exception):
+    pass

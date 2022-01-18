@@ -1,0 +1,5 @@
+
+
+PACKET_LENGTH_HEADER_SIZE = 8
+
+
